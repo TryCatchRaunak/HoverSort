@@ -10,19 +10,24 @@ pub struct HoverSort;
 
 impl HoverSort {
     pub fn analyze(input: &str) -> AnalysisResult {
-        let kind = if detector::is_timestamp(input) {
-            DataKind::Timestamp
-        } else {
-            DataKind::Unknown
-        };
+        let parsed = detector::is_timestamp(input)
+            .then(|| crate::features::timestamp::parser::parse(input))
+            .flatten();
 
-        let is_match = kind != DataKind::Unknown;
+        match parsed {
+            Some(timestamp) => AnalysisResult {
+                original: input.to_string(),
+                kind: DataKind::Timestamp,
+                is_match: true,
+                data: AnalysisData::Timestamp(timestamp),
+            },
 
-        AnalysisResult {
-            original: input.to_string(),
-            kind,
-            is_match,
-            data: AnalysisData::Unknown,
+            None => AnalysisResult {
+                original: input.to_string(),
+                kind: DataKind::Unknown,
+                is_match: false,
+                data: AnalysisData::Unknown,
+            },
         }
     }
 }

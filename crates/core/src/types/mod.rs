@@ -1,7 +1,7 @@
 //! Shared enums and value types.
 
 /// The kind of data HoverSort detected.
-#[derive(Debug, Clone, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Hash)]
 pub enum DataKind {
     /// HoverSort couldn't identify the value.
     Unknown,
