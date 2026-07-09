@@ -1,20 +1,25 @@
 //! Timestamp detection.
 
-/// Returns true if the input looks like a timestamp.
+/// Returns `true` if the input looks like a timestamp.
+///
+/// Currently supported:
+/// - Unix timestamp (10 digits)
+/// - Unix timestamp in milliseconds (13 digits)
+/// - Basic ISO-8601 timestamps ending with `Z`
 pub fn is_timestamp(input: &str) -> bool {
     let text = input.trim();
 
-    // Unix timestamp in seconds
+    // Unix timestamp (seconds)
     if text.len() == 10 && text.chars().all(|c| c.is_ascii_digit()) {
         return true;
     }
 
-    // Unix timestamp in milliseconds
+    // Unix timestamp (milliseconds)
     if text.len() == 13 && text.chars().all(|c| c.is_ascii_digit()) {
         return true;
     }
 
-    // ISO-8601 (very basic detection)
+    // Very basic ISO-8601 detection
     if text.contains('T') && text.ends_with('Z') {
         return true;
     }
