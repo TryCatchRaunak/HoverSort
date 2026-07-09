@@ -1,0 +1,14 @@
+# Rust build output
+target/
+
+# Cargo backup files
+**/*.rs.bk
+
+# IDE
+.vscode/
+
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
