@@ -1,115 +1,12 @@
-   0.017307800s  INFO prepare_target{force=false package_id=core v0.1.0 (D:\Projects\Tools\HoverSort\crates\core) target="core"}: cargo::core::compiler::fingerprint: fingerprint error for core v0.1.0 (D:\Projects\Tools\HoverSort\crates\core)/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("core", ["lib"], "D:\\Projects\\Tools\\HoverSort\\crates\\core\\src\\lib.rs", Edition2024) }
-   0.018506600s  INFO prepare_target{force=false package_id=core v0.1.0 (D:\Projects\Tools\HoverSort\crates\core) target="core"}: cargo::core::compiler::fingerprint:     err: failed to read `D:\Projects\Tools\HoverSort\target\debug\.fingerprint\core-64b159bc87743fd8\lib-core`
-
-Caused by:
-    The system cannot find the file specified. (os error 2)
-
-Stack backtrace:
-   0: git_midx_writer_dump
-   1: git_midx_writer_dump
-   2: git_midx_writer_dump
-   3: git_midx_writer_dump
-   4: git_filter_source_repo
-   5: git_filter_source_repo
-   6: git_filter_source_repo
-   7: git_filter_source_repo
-   8: git_filter_source_repo
-   9: git_filter_source_repo
-  10: git_filter_source_repo
-  11: git_libgit2_prerelease
-  12: <unknown>
-  13: <unknown>
-  14: <unknown>
-  15: <unknown>
-  16: git_midx_writer_dump
-  17: git_filter_source_repo
-  18: git_midx_writer_dump
-  19: BaseThreadInitThunk
-  20: RtlUserThreadStart
-   0.030374600s  INFO prepare_target{force=false package_id=core v0.1.0 (D:\Projects\Tools\HoverSort\crates\core) target="core"}: cargo::core::compiler::fingerprint: fingerprint error for core v0.1.0 (D:\Projects\Tools\HoverSort\crates\core)/Check { test: true }/TargetInner { name_inferred: true, ..: lib_target("core", ["lib"], "D:\\Projects\\Tools\\HoverSort\\crates\\core\\src\\lib.rs", Edition2024) }
-   0.030402100s  INFO prepare_target{force=false package_id=core v0.1.0 (D:\Projects\Tools\HoverSort\crates\core) target="core"}: cargo::core::compiler::fingerprint:     err: failed to read `D:\Projects\Tools\HoverSort\target\debug\.fingerprint\core-6704322186c0286a\test-lib-core`
-
-Caused by:
-    The system cannot find the file specified. (os error 2)
-
-Stack backtrace:
-   0: git_midx_writer_dump
-   1: git_midx_writer_dump
-   2: git_midx_writer_dump
-   3: git_midx_writer_dump
-   4: git_filter_source_repo
-   5: git_filter_source_repo
-   6: git_filter_source_repo
-   7: git_filter_source_repo
-   8: git_filter_source_repo
-   9: git_filter_source_repo
-  10: git_filter_source_repo
-  11: git_libgit2_prerelease
-  12: <unknown>
-  13: <unknown>
-  14: <unknown>
-  15: <unknown>
-  16: git_midx_writer_dump
-  17: git_filter_source_repo
-  18: git_midx_writer_dump
-  19: BaseThreadInitThunk
-  20: RtlUserThreadStart
-   0.030794900s  INFO prepare_target{force=false package_id=windows v0.1.0 (D:\Projects\Tools\HoverSort\apps\windows) target="windows"}: cargo::core::compiler::fingerprint: fingerprint error for windows v0.1.0 (D:\Projects\Tools\HoverSort\apps\windows)/Check { test: false }/TargetInner { name: "windows", doc: true, ..: with_path("D:\\Projects\\Tools\\HoverSort\\apps\\windows\\src\\main.rs", Edition2024) }
-   0.030810300s  INFO prepare_target{force=false package_id=windows v0.1.0 (D:\Projects\Tools\HoverSort\apps\windows) target="windows"}: cargo::core::compiler::fingerprint:     err: failed to read `D:\Projects\Tools\HoverSort\target\debug\.fingerprint\windows-7a0c970ae496e162\bin-windows`
-
-Caused by:
-    The system cannot find the file specified. (os error 2)
-
-Stack backtrace:
-   0: git_midx_writer_dump
-   1: git_midx_writer_dump
-   2: git_midx_writer_dump
-   3: git_midx_writer_dump
-   4: git_filter_source_repo
-   5: git_filter_source_repo
-   6: git_filter_source_repo
-   7: git_filter_source_repo
-   8: git_filter_source_repo
-   9: git_filter_source_repo
-  10: git_filter_source_repo
-  11: git_libgit2_prerelease
-  12: <unknown>
-  13: <unknown>
-  14: <unknown>
-  15: <unknown>
-  16: git_midx_writer_dump
-  17: git_filter_source_repo
-  18: git_midx_writer_dump
-  19: BaseThreadInitThunk
-  20: RtlUserThreadStart
-   0.031384200s  INFO prepare_target{force=false package_id=windows v0.1.0 (D:\Projects\Tools\HoverSort\apps\windows) target="windows"}: cargo::core::compiler::fingerprint: fingerprint error for windows v0.1.0 (D:\Projects\Tools\HoverSort\apps\windows)/Check { test: true }/TargetInner { name: "windows", doc: true, ..: with_path("D:\\Projects\\Tools\\HoverSort\\apps\\windows\\src\\main.rs", Edition2024) }
-   0.031402300s  INFO prepare_target{force=false package_id=windows v0.1.0 (D:\Projects\Tools\HoverSort\apps\windows) target="windows"}: cargo::core::compiler::fingerprint:     err: failed to read `D:\Projects\Tools\HoverSort\target\debug\.fingerprint\windows-8a3e5947baeb7b31\test-bin-windows`
-
-Caused by:
-    The system cannot find the file specified. (os error 2)
-
-Stack backtrace:
-   0: git_midx_writer_dump
-   1: git_midx_writer_dump
-   2: git_midx_writer_dump
-   3: git_midx_writer_dump
-   4: git_filter_source_repo
-   5: git_filter_source_repo
-   6: git_filter_source_repo
-   7: git_filter_source_repo
-   8: git_filter_source_repo
-   9: git_filter_source_repo
-  10: git_filter_source_repo
-  11: git_libgit2_prerelease
-  12: <unknown>
-  13: <unknown>
-  14: <unknown>
-  15: <unknown>
-  16: git_midx_writer_dump
-  17: git_filter_source_repo
-  18: git_midx_writer_dump
-  19: BaseThreadInitThunk
-  20: RtlUserThreadStart
-    Checking windows v0.1.0 (D:\Projects\Tools\HoverSort\apps\windows)
+   0.094398300s  INFO prepare_target{force=false package_id=core v0.1.0 (D:\Projects\Tools\HoverSort\crates\core) target="core"}: cargo::core::compiler::fingerprint: stale: changed "D:\\Projects\\Tools\\HoverSort\\crates\\core\\src\\models.rs"
+   0.094435000s  INFO prepare_target{force=false package_id=core v0.1.0 (D:\Projects\Tools\HoverSort\crates\core) target="core"}: cargo::core::compiler::fingerprint:           (vs) "D:\\Projects\\Tools\\HoverSort\\target\\debug\\.fingerprint\\core-64b159bc87743fd8\\dep-lib-core"
+   0.094441600s  INFO prepare_target{force=false package_id=core v0.1.0 (D:\Projects\Tools\HoverSort\crates\core) target="core"}: cargo::core::compiler::fingerprint:                FileTime { seconds: 13428079000, nanos: 840447900 } < FileTime { seconds: 13428079222, nanos: 409223700 }
+   0.094643000s  INFO prepare_target{force=false package_id=core v0.1.0 (D:\Projects\Tools\HoverSort\crates\core) target="core"}: cargo::core::compiler::fingerprint: fingerprint dirty for core v0.1.0 (D:\Projects\Tools\HoverSort\crates\core)/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("core", ["lib"], "D:\\Projects\\Tools\\HoverSort\\crates\\core\\src\\lib.rs", Edition2024) }
+   0.094684500s  INFO prepare_target{force=false package_id=core v0.1.0 (D:\Projects\Tools\HoverSort\crates\core) target="core"}: cargo::core::compiler::fingerprint:     dirty: FsStatusOutdated(StaleItem(ChangedFile { reference: "D:\\Projects\\Tools\\HoverSort\\target\\debug\\.fingerprint\\core-64b159bc87743fd8\\dep-lib-core", reference_mtime: FileTime { seconds: 13428079000, nanos: 840447900 }, stale: "D:\\Projects\\Tools\\HoverSort\\crates\\core\\src\\models.rs", stale_mtime: FileTime { seconds: 13428079222, nanos: 409223700 } }))
+   0.095657500s  INFO prepare_target{force=false package_id=core v0.1.0 (D:\Projects\Tools\HoverSort\crates\core) target="core"}: cargo::core::compiler::fingerprint: stale: changed "D:\\Projects\\Tools\\HoverSort\\crates\\core\\src\\models.rs"
+   0.095676400s  INFO prepare_target{force=false package_id=core v0.1.0 (D:\Projects\Tools\HoverSort\crates\core) target="core"}: cargo::core::compiler::fingerprint:           (vs) "D:\\Projects\\Tools\\HoverSort\\target\\debug\\.fingerprint\\core-6704322186c0286a\\dep-test-lib-core"
+   0.095682300s  INFO prepare_target{force=false package_id=core v0.1.0 (D:\Projects\Tools\HoverSort\crates\core) target="core"}: cargo::core::compiler::fingerprint:                FileTime { seconds: 13428079000, nanos: 840447900 } < FileTime { seconds: 13428079222, nanos: 409223700 }
+   0.095818100s  INFO prepare_target{force=false package_id=core v0.1.0 (D:\Projects\Tools\HoverSort\crates\core) target="core"}: cargo::core::compiler::fingerprint: fingerprint dirty for core v0.1.0 (D:\Projects\Tools\HoverSort\crates\core)/Check { test: true }/TargetInner { name_inferred: true, ..: lib_target("core", ["lib"], "D:\\Projects\\Tools\\HoverSort\\crates\\core\\src\\lib.rs", Edition2024) }
+   0.095839100s  INFO prepare_target{force=false package_id=core v0.1.0 (D:\Projects\Tools\HoverSort\crates\core) target="core"}: cargo::core::compiler::fingerprint:     dirty: FsStatusOutdated(StaleItem(ChangedFile { reference: "D:\\Projects\\Tools\\HoverSort\\target\\debug\\.fingerprint\\core-6704322186c0286a\\dep-test-lib-core", reference_mtime: FileTime { seconds: 13428079000, nanos: 840447900 }, stale: "D:\\Projects\\Tools\\HoverSort\\crates\\core\\src\\models.rs", stale_mtime: FileTime { seconds: 13428079222, nanos: 409223700 } }))
     Checking core v0.1.0 (D:\Projects\Tools\HoverSort\crates\core)
-    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.23s
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.27s
